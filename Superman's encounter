@@ -1,0 +1,14 @@
+T = int(input())
+l=['sunday','monday','tuesday','wednesday','thursday','friday','saturday','kryptonday','coluday','daxamday']
+for i in range(T):
+    n=int(input())
+    if(n>=296):
+        count = n//296
+        n = n - count*296
+    disc = n%10
+    print(l[disc])
+ 
+
+
+
+
