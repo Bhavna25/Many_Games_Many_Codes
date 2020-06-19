@@ -1,0 +1,18 @@
+import string
+for _ in range(int(input())):
+    h,m=map(int,input().split(":"))
+    sum=h
+    for _ in range(m):
+       h=2*h-1
+       sum+=h
+    result=string.ascii_uppercase
+    password=""
+    for i in str(sum):
+        password+=result[int(i)]
+    print(password)
+
+
+
+
+
+
