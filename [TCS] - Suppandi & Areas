@@ -1,0 +1,35 @@
+def check(t):
+
+  for i in range(t):
+
+    name=input().lower()
+
+    s1=int(input())
+
+    s2=int(input())
+
+    if name=="triangle":
+
+      arearect=s1*s2
+
+      print(int(arearect))
+
+    if name=="square":
+
+      areatri=0.5*s1*s2
+
+      print(int(areatri))
+
+    if name=="rectangle":
+
+      areasqr=s1*s1
+
+      print(int(areasqr))
+
+    if name!="triangle" and name!="square" and name!="rectangle":
+
+      print(0)
+
+t=int(input())
+
+check(t)
