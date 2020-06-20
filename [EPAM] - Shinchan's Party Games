@@ -1,0 +1,33 @@
+t=int(input())
+for _ in range(t):
+    m,n=map(int,input().split())
+    l=[]
+    for i in range(m):
+        l.append(list(map(int,input().split())))
+    i,j=0,0
+    cnt_1,cnt_2=0,0
+    while(i!=m-1 or j!=n-1):
+        if(i==j and l[i+1][j+1]==0):
+            i+=1
+            j+=1
+        elif(i!=m-1 and l[i+1][j]==0):
+            i+=1
+        else:
+            j+=1
+        cnt_1+=1
+    i,j=0,0
+    while(i!=m-1 or j!=n-1):
+        if(i==j and l[i+1][j+1]==0):
+            i+=1
+            j+=1
+        elif(j!=n-1 and l[i][j+1]==0):
+            j+=1
+        else:
+            i+=1
+        cnt_2+=1
+    print(min(cnt_1,cnt_2))
+
+
+
+
+
