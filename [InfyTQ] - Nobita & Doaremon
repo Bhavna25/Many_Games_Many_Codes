@@ -1,0 +1,49 @@
+t = int(input())
+
+
+
+for i in range(t):
+
+  s = input()
+
+  i=0
+
+  j=1
+
+  k=2
+
+  l=[]
+
+  while s[i:j]!='':
+
+    l.append(s[i:j])
+
+    i=j
+
+    j=min(j+k,len(s))
+
+    k+=1
+
+
+
+  for i in range(len(l)):
+
+    if i ==0:
+
+      print(l[i],end='')
+
+    else:
+
+      if len(l[i-1])<len(l[i]):
+
+        print(l[i][0]+l[i][len(l[i])-1],end='')
+
+      else:
+
+        continue 
+
+  print('')
+
+
+
+
